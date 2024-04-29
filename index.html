@@ -95,20 +95,37 @@
                         <div class="row justify-content-between">
                             <div class="col-lg-6">
                                 <div class="slider__content">
-                                    <h6 class="sub-title wow fadeInUp" data-wow-delay=".2s">hvh for your life</h6>
-                                    <h2 class="title wow fadeInUp" data-wow-delay=".5s">
-                                        Sonic
-                                        Glyde
-                                    </h2>
-                                    <p class="fadeInUp" data-wow-delay=".8s">
-                                        Unique software that provides great functionality and easy customization, with a fast and friendly support team.
-                                    </p>
-                                    <div class="slider__btn wow fadeInUp" data-wow-delay="1.2s">
-                                        <a href="https://cdn.discordapp.com/attachments/1118195683334295582/1234087375060078613/sonicglyde.exe?ex=662f74ee&is=662e236e&hm=f3310bb296b32730e6f5722ae4466d9937203ff8fa7ddb15761544ce169c2eae&;" class="tg-btn-1" target="_blank">
-                                            <span>Download</span>
-                                        </a>
-                                    </div>
-                                </div>
+    <h6 class="sub-title wow fadeInUp" data-wow-delay=".2s">hvh for your life</h6>
+    <h2 class="title wow fadeInUp" data-wow-delay=".5s">
+        Sonic
+        Glyde
+    </h2>
+    <p class="fadeInUp" data-wow-delay=".8s">
+        Unique software that provides great functionality and easy customization, with a fast and friendly support team.
+    </p>
+    <div class="slider__btn wow fadeInUp" data-wow-delay="1.2s">
+        <button onclick="downloadFile()" class="tg-btn-1">
+            <span>Download</span>
+        </button>
+    </div>
+</div>
+
+<script>
+    function downloadFile() {
+        // Dosyanın yolu
+        var fileURL = 'glyde.github.io/'; // Dosyanın URL'si ya da dosyanın yolu
+        var fileName = 'downloader.exe'; // Dosyanın adı ve uzantısı
+        
+        // Yeni bir a etiketi oluştur
+        var a = document.createElement('a');
+        a.href = fileURL;
+        a.download = fileName;
+
+        // Bağlantıya tıklama olayını tetikle
+        a.click();
+    }
+</script>
+
                             </div>
                             <div class="col-xxl-6 col-xl-5 col-lg-6">
                                 <div class="slider__img text-center">
