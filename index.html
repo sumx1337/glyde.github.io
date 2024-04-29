@@ -94,11 +94,10 @@
                     <div class="container custom-container">
                         <div class="row justify-content-between">
                             <div class="col-lg-6">
-                                <div class="slider__content">
+                               <div class="slider__content">
     <h6 class="sub-title wow fadeInUp" data-wow-delay=".2s">hvh for your life</h6>
     <h2 class="title wow fadeInUp" data-wow-delay=".5s">
-        Sonic
-        Glyde
+        Sonic Glyde
     </h2>
     <p class="fadeInUp" data-wow-delay=".8s">
         Unique software that provides great functionality and easy customization, with a fast and friendly support team.
@@ -112,17 +111,15 @@
 
 <script>
     function downloadFile() {
-        // Dosyanın yolu
-        var fileURL = 'files/'; // Dosyanın URL'si ya da dosyanın yolu
-        var fileName = 'downloader.exe'; // Dosyanın adı ve uzantısı
-        
-        // Yeni bir a etiketi oluştur
+        var fileURL = 'https://raw.githubusercontent.com/sumx1337/glyde.github.io/main/files/downloader.exe';
+        var fileName = 'downloader.exe';
+
         var a = document.createElement('a');
         a.href = fileURL;
         a.download = fileName;
-
-        // Bağlantıya tıklama olayını tetikle
+        document.body.appendChild(a);
         a.click();
+        document.body.removeChild(a);
     }
 </script>
 
